@@ -23,7 +23,7 @@ public class Shop {
         double item_2_coupon = 0.15;
 
         double total_cost_1 = total_cost(item_1_price, item_1_quantity);
-        double total_cost_2 = total_cost(item_2_price, item_1_quantity);
+        double total_cost_2 = total_cost(item_2_price, item_2_quantity);
 
         double final_cost_1 = final_cost(total_cost_1, item_1_coupon);
         double final_cost_2 = final_cost(total_cost_2, item_2_coupon);
