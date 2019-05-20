@@ -1,13 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Session 5: Make following changes in code of week4
- *
-
- *
- * 7. Prompt user to enter details of item3 i.e. item_3_name, item_3_price, item_3_quantity, item_3_coupon and recalculate 2, 3, 4, 5, 6 above.
- *
- **/
 public class ShoppingMain2 {
     private static Scanner input;
 
