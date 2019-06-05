@@ -1,14 +1,12 @@
 package zoo;
 
-public class Animal {
-    private String name;
-    private String favFood;
-    private int weight;
-    private boolean inCage;
+public abstract class Animal {
+    String name;
+    int weight;
+    boolean inCage;
 
-    public Animal(String animalName, String animalFavFood, int animalWeight, boolean animalInCage) {
+    public Animal(String animalName, int animalWeight, boolean animalInCage) {
         name = animalName;
-        favFood = animalFavFood;
         weight = animalWeight;
         inCage = animalInCage;
 
@@ -26,12 +24,10 @@ public class Animal {
         name = newName;
     }
 
-    public int eat(int kilos) {
-        return weight += kilos;
-    }
-
     public boolean letOut() {
         return inCage != inCage;
     }
+
+    public abstract int eat(int kilos, String food);
 
 }
