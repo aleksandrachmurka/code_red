@@ -7,7 +7,6 @@ import java.util.Scanner;
 /**
  * Session 8: Make following changes in code of week7
  *
- *  1. Create Arrays for item_name, item_price, item_quantity, item_coupon
  *  2. Inside the loop add item_name, item_price, item_quantity, item_coupon input to Array
  *  3. Use data in arrays created in step 2 and implement following:
  *  a. printCostStatistics & printCouponStatistics
@@ -24,6 +23,11 @@ public class ShoppingMain8 {
 
         System.out.println("Please enter number of items : ");
         int numberOfItems = input.nextInt();
+        String[] item_name = new String[numberOfItems];
+        int[] item_price = new int[numberOfItems];
+        int[] item_quantity = new int[numberOfItems];
+        int[] item_coupon = new int[numberOfItems];
+
         double finalCost = 0;
 
         //TODO: 1. Create arrays for item_name, item_price, item_quantity, item_coupon
