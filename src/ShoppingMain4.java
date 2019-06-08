@@ -71,8 +71,9 @@ public class ShoppingMain4 {
         double costAfterCoupon = finalCost - couponDiscount;
 
         System.out.printf("Cost after apply coupon on shopping cart : %.2f", costAfterCoupon);
-        System.out.println(Arrays.toString(item_finalCosts));
-        System.out.println(Arrays.toString(item_coupons));
+
+        printCostStatistics(item_finalCosts);
+        printCouponStatistics(item_coupons);
     }
 
     private static void printTotalCost(String itemName, int totalCost) {
@@ -87,39 +88,36 @@ public class ShoppingMain4 {
         System.out.printf("Final cost of " + itemName + " is %.2f", finalCost);
     }
 
-//    private static void printCostStatistics(double item_finalCosts) {
-//        double highestCost;
-//        double lowestCost;
-//        for (double finalCost : item_finalCosts) {
-//            highestCost = finalCost;
-//            lowestCost = finalCost;
+    private static void printCostStatistics(double[] item_finalCosts) {
+        double highestCost = 0;
+        double lowestCost = Integer.MAX_VALUE;
+        for (double finalCost : item_finalCosts) {
+            if (finalCost > highestCost) {
+                highestCost = finalCost;
+            }
+
+            if (finalCost < lowestCost) {
+                lowestCost = finalCost;
+            }
+        }
+        System.out.println("****** Cost statistics ******");
+        System.out.printf("Most expensive item costs : %.2f",  highestCost);
+        System.out.printf("Cheapest item costs : %.2f", lowestCost);
+    }
 //
-//            if (finalCost > highestCost) {
-//                highestCost = finalCost;
-//            }
-//
-//            if (finalCost < lowestCost) {
-//                lowestCost = finalCost;
-//            }
-//        }
-//        System.out.println("****** Cost statistics ******");
-//        System.out.println("Most expensive item costs : " + highestCost);
-//        System.out.println("Cheapest item costs : " + lowestCost);
-//    }
-////
-//    private static void printCouponStatistics(double item_coupons) {
-//        double highestCoupon;
-//        for (double coupon : item_coupons) {
-//            highestCoupon = coupon;
-//
-//            if (coupon > highestCoupon ) {
-//                highestCoupon = coupon;
-//            }
-//
-//        }
-//        System.out.println("****** Coupon statistics ******");
-//        System.out.println(highestCoupon + " percent off is awesome !!");
-//    }
+    private static void printCouponStatistics(double[] item_coupons) {
+        double highestCoupon =0;
+        for (double coupon : item_coupons) {
+            highestCoupon = coupon;
+
+            if (coupon > highestCoupon ) {
+                highestCoupon = coupon;
+            }
+
+        }
+        System.out.println("****** Coupon statistics ******");
+        System.out.println(highestCoupon + " percent off is awesome !!");
+    }
 
     private static int calculateTotalCost(int price, int quantity){
         int totalCost = price * quantity;
