@@ -6,6 +6,7 @@
 // 3.	Proponuje dodac/wygenerowac (alt +insert) metode toString() w klasie Item, a nastepenie po utworzeniu kazdego obiektu wyprintowac go (e.g. System.out.println("Created item: " + item)) w klasie Application Shopping
 // (linie 52/53)
 // 4.	Czy warto byloby przeniesc metody calculateTotalCost/calculateFinalCost jako niestatyczne metody do klasy Item ? 
+// https://learning.oreilly.com/live-training/courses/getting-started-with-reactjs/0636920284475/
 
 
 package shop;
