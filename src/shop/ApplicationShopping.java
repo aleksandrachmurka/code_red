@@ -1,3 +1,13 @@
+// Ponizej kilka sugestii: 
+// 1.	Pola w klasie Item mozna oznaczyc jako private (zwlaszcza, ze i tak dostajemy sie do pol poprzez metody getX() – tzw. gettery)
+// 2.	Czy warto byloby pola w klasie Item dodatkowo oznaczyc jako final ? Patrzac na aktualny kod, takie podejscie powinno zadzialac. Ogolnie polecam poczytac o slowie kluczowym final i koncepcji tzw. Immutable objects:
+// https://stackoverflow.com/questions/137868/using-the-final-modifier-whenever-applicable-in-java
+// https://www.baeldung.com/java-immutable-object
+// 3.	Proponuje dodac/wygenerowac (alt +insert) metode toString() w klasie Item, a nastepenie po utworzeniu kazdego obiektu wyprintowac go (e.g. System.out.println("Created item: " + item)) w klasie Application Shopping
+// (linie 52/53)
+// 4.	Czy warto byloby przeniesc metody calculateTotalCost/calculateFinalCost jako niestatyczne metody do klasy Item ? 
+
+
 package shop;
 
 import java.util.ArrayList;
