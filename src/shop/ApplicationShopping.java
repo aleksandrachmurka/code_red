@@ -40,17 +40,18 @@ public class ApplicationShopping {
             System.out.println("Enter coupon for item" + itemCount + " : ");
             item_coupon = input.nextDouble();
 
+            Item item = new Item(item_name, item_price, item_quantity, item_coupon);
+            int item_totalCost = item.calculateTotalCost();
+            double item_finalCost = item.calculateFinalCost();
 
-            int item_totalCost = calculateTotalCost(item_price, item_quantity);
-            printTotalCost(item_name, item_totalCost);
-            printCouponRate(item_name, item_coupon);
-            double item_finalCost = calculateFinalCost(item_totalCost, item_coupon);
 
-            printFinalCost(item_name, item_finalCost);
+            items.add(item);
             finalCost = finalCost + item_finalCost;
 
-            Item item = new Item(item_name, item_price, item_quantity, item_coupon, item_finalCost);
-            items.add(item);
+            printTotalCost(item_name, item_totalCost);
+            printCouponRate(item_name, item_coupon);
+            printFinalCost(item_name, item_finalCost);
+            System.out.println("Added item: " + item.toString());
 
         }
 
@@ -84,7 +85,8 @@ public class ApplicationShopping {
         double highestCost = 0;
         double lowestCost = Integer.MAX_VALUE;
         for (Item item : items) {
-            double itemFinalCost = item.getFinalCost();
+            double totalCost = item.calculateTotalCost();
+            double itemFinalCost = item.calculateFinalCost();
             if ( itemFinalCost > highestCost) {
                 highestCost = itemFinalCost;
             }
@@ -110,16 +112,6 @@ public class ApplicationShopping {
         }
         System.out.println("****** Coupon statistics ******");
         System.out.println(highestCoupon + " percent off is awesome !!");
-    }
-
-    private static int calculateTotalCost(int price, int quantity){
-        int totalCost = price * quantity;
-        return totalCost;
-    }
-
-    private static double calculateFinalCost(int totalCost, double coupon){
-        double finalCost = totalCost - (totalCost * coupon / 100);
-        return finalCost;
     }
 
     private static double calculateCouponDiscount(String couponCode, double finalCost){

@@ -1,18 +1,18 @@
+//Czy warto byloby przeniesc metody calculateTotalCost/calculateFinalCost jako niestatyczne metody do klasy Item
+
 package shop;
 
 public class Item {
-    String name;
-    int price;
-    int quantity;
-    double coupon;
-    double finalCost;
+    private final String name;
+    private final int price;
+    private final int quantity;
+    private final double coupon;
 
-    public Item(String name, int price, int quantity, double coupon, double finalCost) {
+    public Item(String name, int price, int quantity, double coupon) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
         this.coupon = coupon;
-        this.finalCost = finalCost;
     }
 
     public String getName() {
@@ -31,9 +31,21 @@ public class Item {
         return coupon;
     }
 
-    public double getFinalCost() {
-        return finalCost;
+    @Override
+    public String toString() {
+        return "Item{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                ", coupon=" + coupon +
+                '}';
     }
 
+    public int calculateTotalCost(){
+        return price * quantity;
+    }
 
+    public double calculateFinalCost(){
+        return (price * quantity) - ((price * quantity) * coupon / 100);
+    }
 }

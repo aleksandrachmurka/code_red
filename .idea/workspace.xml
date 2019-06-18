@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80a611d1-f84a-48cf-835c-a6684479eb49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ClassesAndInterfaces/Applications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassesAndInterfaces/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassesAndInterfaces/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassesAndInterfaces/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ClassesAndInterfaces/Pen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shop/ApplicationShopping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shop/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Week 10 Designing classes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shop/ApplicationShopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shop/ApplicationShopping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shop/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shop/Item.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,12 +17,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/shop/ApplicationShopping.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1917">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="-457">
+              <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shop/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-349">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="342">
+              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
               <folding>
                 <element signature="e#405#406#0" expanded="true" />
                 <element signature="e#432#433#0" expanded="true" />
@@ -50,8 +44,10 @@
                 <element signature="e#552#553#0" expanded="true" />
                 <element signature="e#585#586#0" expanded="true" />
                 <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#1004#1005#0" expanded="true" />
+                <element signature="e#1043#1044#0" expanded="true" />
+                <element signature="e#1084#1085#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,7 +110,6 @@
         <option value="$PROJECT_DIR$/ShoppingMain8.java" />
         <option value="$PROJECT_DIR$/ShoppingMain4" />
         <option value="$PROJECT_DIR$/src/ShoppingMain4.java" />
-        <option value="$PROJECT_DIR$/src/shop/Item.java" />
         <option value="$PROJECT_DIR$/src/ClassesAndInterfaces/Example.java" />
         <option value="$PROJECT_DIR$/src/Example.java" />
         <option value="$PROJECT_DIR$/src/ClassesAndInterfaces/Applications.java" />
@@ -123,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/ClassesAndInterfaces/Pen.java" />
         <option value="$PROJECT_DIR$/src/ClassesAndInterfaces/Box.java" />
         <option value="$PROJECT_DIR$/src/shop/ShoppingMain9.java" />
+        <option value="$PROJECT_DIR$/src/shop/Item.java" />
         <option value="$PROJECT_DIR$/src/shop/ApplicationShopping.java" />
       </list>
     </option>
@@ -145,8 +141,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ApplicationShopping">
     <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="zoo.Application" />
       <module name="code_red" />
@@ -397,14 +393,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560001156373</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add new package 'shop'">
+      <created>1560440931393</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1560440931393</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add exercise from last class - Classes and Interfaces">
+      <created>1560440978462</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1560440978462</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18910742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19515885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -413,7 +423,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24713585" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24713585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,7 +486,9 @@
     <MESSAGE value="Add shapes package" />
     <MESSAGE value="Add shop v.4 and new methods to zoo classes" />
     <MESSAGE value="Fix array issue in shop v.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix array issue in shop v.4" />
+    <MESSAGE value="Add new package 'shop'" />
+    <MESSAGE value="Add exercise from last class - Classes and Interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add exercise from last class - Classes and Interfaces" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ShoppingList.java" />
@@ -733,13 +745,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Example.java" />
     <entry file="file://$PROJECT_DIR$/src/ClassesAndInterfaces/Pen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -785,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shop/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-349">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="342">
+          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
           <folding>
             <element signature="e#405#406#0" expanded="true" />
             <element signature="e#432#433#0" expanded="true" />
@@ -796,16 +802,18 @@
             <element signature="e#552#553#0" expanded="true" />
             <element signature="e#585#586#0" expanded="true" />
             <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shop/ApplicationShopping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1917">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="-457">
+          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
