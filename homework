@@ -1,0 +1,40 @@
+Ponizej kilka sugestii: 
+1.	Pola w klasie Item mozna oznaczyc jako private (zwlaszcza, ze i tak dostajemy sie do pol poprzez metody getX() – tzw. gettery)
+2.	Czy warto byloby pola w klasie Item dodatkowo oznaczyc jako final ? Patrzac na aktualny kod, takie podejscie powinno zadzialac. Ogolnie polecam poczytac o slowie kluczowym final i koncepcji tzw. Immutable objects:
+https://stackoverflow.com/questions/137868/using-the-final-modifier-whenever-applicable-in-java
+https://www.baeldung.com/java-immutable-object
+3.	Proponuje dodac/wygenerowac (alt +insert) metode toString() w klasie Item, a nastepenie po utworzeniu kazdego obiektu wyprintowac go (e.g. System.out.println("Created item: " + item)) w klasie Application Shopping
+(linie 52/53)
+4.	Czy warto byloby przeniesc metody calculateTotalCost/calculateFinalCost jako niestatyczne metody do klasy Item ? 
+
+
+
+7
+Try to implement the examples from this presentation by yourself
+Experiment , modify, see what happens.
+Create another implementation of an 'Item': A Notebook that along with Price has : Owner's name, page count. 
+Bonus task :
+Modify our box, so it is able to give us the most expensive item ( returns )
+Bonus task #2 : 
+Modify our box, so we are able to remove the cheapest item 
+
+
+8
+Material covered on last session:
+•	Reading/writing to the files
+https://www.tutorialspoint.com/java/java_files_io.htm
+•	Exceptions handling
+https://www.w3schools.com/java/java_try_catch.asp
+•	Gradle
+https://www.jetbrains.com/help/idea/getting-started-with-gradle.html
+https://www.tutorialspoint.com/gradle/gradle_build_a_java_project.htm
+
+Homework:
+1.	Create code that reads from console and writes the data to the file.
+2.	Write code that reads from internet (https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv) and stores data to the file. Calculate average and sum per each column, try to think about creating object model for this data.
+Having single line read as String you can use a string.split(",") method on this object and then you have access to all parts:
+String string = "name,mail";
+String[] parts = string.split(",");
+String name = parts[0]; //name
+String mail = parts[1]; //mail
+3.	Create gradle project according to the tutorial/code provided in presentation.
