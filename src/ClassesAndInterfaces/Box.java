@@ -17,6 +17,30 @@ public class Box implements Item {
         return totalValue;
     }
 
+    public Item getMostExpensiveItem() {
+        Item mostExpensiveItem = items.get(0);
+
+        for (Item item : items) {
+            if (item.getPrice() > mostExpensiveItem.getPrice()) {
+                mostExpensiveItem = item;
+            }
+        }
+
+        return mostExpensiveItem;
+    }
+
+    public void removeCheapestItem() {
+        Item cheapestItem = items.get(0);
+
+        for (Item item : items) {
+            if (item.getPrice() < cheapestItem.getPrice()) {
+                cheapestItem = item;
+            }
+        }
+
+        items.remove(cheapestItem);
+    }
+
     public int empty() {
         int itemCount = items.size();
         items.clear();
