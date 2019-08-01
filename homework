@@ -1,3 +1,23 @@
+Last 
+Summary of what we've learned on last session:
+1.	How to use gradle for dependency management.
+2.	How to write applications using SpringBoot (https://www.javadevjournal.com/spring-boot/what-is-spring-boot/)
+3.	How to use SQL from Java to query relational database and to update it. (https://dzone.com/articles/how-to-specify-named-parameters-using-the-namedpar, https://spring.io/guides/gs/relational-data-access/)
+4.	User interface (https://www.thymeleaf.org/) 
+
+Tutorial:
+https://www.baeldung.com/spring-boot-crud-thymeleaf
+
+You can get the code from github:
+https://github.com/lslonina/user-manager-wit
+
+
+Task:
+Go through the code:
+1.	Try to add one more field to user object (e.g. email, birthdate) and provide ability to store and modify this field from user interface.
+2.	Instead of using User object, try to write application for different type e.g. Item (with fields: id, itemName, quantity). Update user interface and database access classes.
+
+
 Ponizej kilka sugestii: 
 1.	Pola w klasie Item mozna oznaczyc jako private (zwlaszcza, ze i tak dostajemy sie do pol poprzez metody getX() – tzw. gettery)
 2.	Czy warto byloby pola w klasie Item dodatkowo oznaczyc jako final ? Patrzac na aktualny kod, takie podejscie powinno zadzialac. Ogolnie polecam poczytac o slowie kluczowym final i koncepcji tzw. Immutable objects:
